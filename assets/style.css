@@ -7,12 +7,13 @@
     }
     /* stylisation de nav */
     .header__nav{
-    
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
-        height: 80px;
-        box-shadow: 0 5px 5px rgb(158, 91, 91);
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      height: 80px;
+      background-color: rgb(242, 235, 235);
+      box-shadow: 0 5px 5px rgb(158, 91, 91);
+        
     }
         
     /* stylisation de nav-links */
@@ -110,28 +111,21 @@
 
    .main__section-presentation{
 max-width: 600px;
-margin: 0, auto;
-
- overflow: hidden;
- border: 1px solid #f1f1f1;
- padding: 8px;
- border: solid 5px black;
-
-   }
+margin: auto;
+padding-top: 10px;
+overflow: hidden;
+}
 .main__section-carousel {
   /* animation: slider 12s infinite ease-in-out; */
   display: flex;
   width: auto;
+  animation: slider 12s infinite ease-in-out;
 
 
 }
 .main__section-carousel img{
   flex-shrink: 0;
   width: 100%;
-    display: flex;
-  
-   
-   
 }
 
 /* Animation caroussel*/
@@ -165,8 +159,8 @@ margin: 0, auto;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #a50e0e;
     background-color: rgb(209, 193, 193);
+    padding: 0.8rem;
 
 }
 
@@ -176,6 +170,156 @@ margin: 0, auto;
     color: rgb(158, 91, 91);
     text-transform: uppercase;
     letter-spacing: 2px;
-    }
+}
+/*------------------------------------*/
+
+.main__section-adherer{
+  max-width: 600px;
+  margin: auto;
+  padding-top: 10px;
+    
+  }
+  
+.main__section-adherer-title  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(0.4rem + 1.5vw) ;
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px rgb(127, 16, 16);
+  animation: color-change 2s linear infinite;
+  background-color: rgb(255 255 255 / 47%);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
+ text-transform: uppercase;
+  &:hover{
+    background-color: rgba(17, 2, 2, 0.391);
+    color: rgb(236, 229, 229);
+    box-shadow: 8px 8px 0px rgba(39, 25, 25, 0.643);
+    padding-right: 20px;
+  .arrow > span:nth-child(1){
+    
+    transform: translateX(-5px);
+    animation: color 0.8s linear infinite;
+  }
+  .arrow > span:nth-child(2){
+
+    transform: translateX(5px);
+    animation: color 1.5s linear infinite;
+   
+  }
+  .arrow > span:nth-child(3){
+    transform: translateX(15px);
+    animation: color 2s linear infinite
+  }
+  }
+
+}
 
 
+@keyframes color-change {
+  0% {
+    border-color: black,;
+  }
+  50% {
+    border-color: red;
+  }
+  100% {
+    border-color: black;
+  }
+}
+  
+/*------------------------------------*/
+.main__section-activites{
+  display: flex;
+  max-width: 600px;
+  margin: auto;
+  padding-top: 10px;
+    
+  }
+
+.main__section-activites-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(0.4rem + 1.5vw) ;
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px rgb(127, 16, 16);
+  animation: color-change 2s linear infinite;
+  background-color: rgb(255 255 255 / 47%);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
+  text-transform: uppercase;
+
+  &:hover{
+    background-color: rgba(17, 2, 2, 0.391);
+    color: rgb(236, 229, 229);
+    box-shadow: 8px 8px 0px rgba(39, 25, 25, 0.643);
+    padding-right: 20px;
+  .arrow > span:nth-child(1){
+    
+    transform: translateX(-5px);
+    animation: color 0.8s linear infinite;
+  }
+  .arrow > span:nth-child(2){
+
+    transform: translateX(5px);
+    animation: color 1.5s linear infinite;
+   
+  }
+  .arrow > span:nth-child(3){
+    transform: translateX(15px);
+    animation: color 2s linear infinite
+  }
+  }
+}
+
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+ width: 30px;
+  height: 30px;
+  transition: all 0.5s ease-out;
+
+}
+
+.arrow > span:nth-child(1){
+  color: rgb(127, 16, 16);
+position: absolute;
+
+
+ 
+}
+.arrow > span:nth-child(2){
+  color: rgb(0, 255, 4);
+  position: absolute;
+
+  
+}
+.arrow > span:nth-child(3){
+  color: rgb(127, 16, 16);
+  position:  absolute;
+
+
+}
+
+@keyframes color{
+  0%{
+    color:rgb(127, 16, 16);
+  }
+  50%{
+    color: rgb(158, 91, 91);
+  }
+  100%{
+    color:rgb(242, 235, 235);
+  }
+}
