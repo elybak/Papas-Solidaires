@@ -1,4 +1,8 @@
-    /*stylisation de header & navbar*/
+   body{
+    padding: 8px;
+   }
+   
+   /*stylisation de header & navbar*/
     
     /* redimensionnement de logo */
     .header__nav-logo{
@@ -171,7 +175,7 @@ overflow: hidden;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-/*------------------------------------*/
+/*--------------- section adherer ---------------------*/
 
 .main__section-adherer{
   max-width: 600px;
@@ -179,7 +183,7 @@ overflow: hidden;
   padding-top: 10px;
     
   }
-  
+
 .main__section-adherer-title  {
   display: flex;
   justify-content: center;
@@ -233,7 +237,7 @@ overflow: hidden;
   }
 }
   
-/*------------------------------------*/
+/*--------------- section activités---------------------*/
 .main__section-activites{
   display: flex;
   max-width: 600px;
@@ -287,7 +291,7 @@ overflow: hidden;
   justify-content: center;
   align-items: center ;
  width: 30px;
-  height: 30px;
+ margin-bottom: 5px;
   transition: all 0.5s ease-out;
 
 }
@@ -322,4 +326,161 @@ position: absolute;
   100%{
     color:rgb(242, 235, 235);
   }
+}
+
+/*---------------------section dons---------------*/
+.main__section-don{
+  max-width: 600px;
+  margin: auto;
+  padding-top: 10px;
+    
+  }
+
+.main__section-don-title  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(0.4rem + 1.5vw) ;
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px rgb(127, 16, 16);
+  animation: color-change 2s linear infinite;
+  background-color: rgb(255 255 255 / 47%);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
+  text-transform: uppercase;
+
+  &:hover{
+    background-color: rgba(17, 2, 2, 0.391);
+    color: rgb(236, 229, 229);
+    box-shadow: 8px 8px 0px rgba(39, 25, 25, 0.643);
+    padding-right: 20px;
+  .arrow > span:nth-child(1){
+    
+    transform: translateX(-5px);
+    animation: color 0.8s linear infinite;
+  }
+  .arrow > span:nth-child(2){
+
+    transform: translateX(5px);
+    animation: color 1.5s linear infinite;
+   
+  }
+  .arrow > span:nth-child(3){
+    transform: translateX(15px);
+    animation: color 2s linear infinite
+  }
+  }
+}
+
+/*---------------------section temoignage ---------------*/
+.main__section-temoignage{
+  max-width: 600px;
+  margin: auto;
+  padding-top: 10px;
+}
+.main__section-temoignage img{
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
+}
+    
+
+.main__section-temoignage-title  {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(0.4rem + 1.5vw) ;
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px rgb(127, 16, 16);
+  animation: color-change 2s linear infinite;
+  background-color: rgb(255 255 255 / 47%);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
+  text-transform: uppercase;
+
+  &:hover{
+    background-color: rgba(17, 2, 2, 0.391);
+    color: rgb(236, 229, 229);
+    box-shadow: 8px 8px 0px rgba(39, 25, 25, 0.643);
+    padding-right: 20px;
+  .arrow > span:nth-child(1){
+    
+    transform: translateX(-5px);
+    animation: color 0.8s linear infinite;
+  }
+  .arrow > span:nth-child(2){
+
+    transform: translateX(5px);
+    animation: color 1.5s linear infinite;
+   
+  }
+  .arrow > span:nth-child(3){
+    transform: translateX(15px);
+    animation: color 2s linear infinite
+  }
+  }
+}
+
+/*---------------------section contact---------------*/
+.main__section-contact{
+  max-width: 600px;
+  margin: auto;
+  padding-top: 10px;
+    
+  }
+
+.main__section-contact-title  {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(0.4rem + 1.5vw) ;
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px rgb(127, 16, 16);
+  animation: color-change 2s linear infinite;
+  background-color: rgb(255 255 255 / 47%);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
+  text-transform: uppercase;
+
+  &:hover{
+    background-color: rgba(17, 2, 2, 0.391);
+    color: rgb(236, 229, 229);
+    box-shadow: 8px 8px 0px rgba(39, 25, 25, 0.643);
+    padding-right: 20px;
+  .arrow > span:nth-child(1){
+    
+    transform: translateX(-5px);
+    animation: color 0.8s linear infinite;
+  }
+  .arrow > span:nth-child(2){
+
+    transform: translateX(5px);
+    animation: color 1.5s linear infinite;
+   
+  }
+  .arrow > span:nth-child(3){
+    transform: translateX(15px);
+    animation: color 2s linear infinite
+  }
+  }
+}
+
+* section> img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
 }
