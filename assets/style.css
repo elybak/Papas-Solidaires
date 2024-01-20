@@ -1,8 +1,12 @@
-   body{
+/* body{
     padding: 8px;
-   }
+   } */
    
    /*stylisation de header & navbar*/
+    .header{
+        max-width: 600px;
+        margin: auto;
+    }
     
     /* redimensionnement de logo */
     .header__nav-logo{
@@ -22,6 +26,7 @@
         
     /* stylisation de nav-links */
     .header__nav-links{
+        /* margin: auto;
         display: none;
         border: solid 1px black;
         justify-content: space-evenly;
@@ -30,18 +35,46 @@
         position: absolute;
         top: 80px;
         height: 100vh;
-        width: 100vw;
+        width: 600px;
         background-color: rgb(209, 193, 193);
-        /* transform: translateX(100%); */
-        transition: transform 0.8s ease-in-out;
+        transition: transform 0.8s ease-in-out; */
+        display: none;
+        align-content: space-around;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: absolute; 
+        top: 80px;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(209, 193, 193);
+        z-index: 1;
+        animation: transition 0.8s ease-out;
         /* ajout d'une classe active pour gerer le menu burger */
         &.active{
-            /* transform: translateX(0%) */
-            display: flex;
-            z-index: 1;
-        
+          display: flex;
+          animation: transition 0.5s ease-out;
         }
+       
     }
+    /* animation de nav-links */
+    @keyframes transition{
+      0%{
+        /* transform: translate(100% , -100%); */
+        transform: rotate(45deg) translate(6px, -6px) ;
+        transform: skewX(45deg) translate(-100px, -100%);
+        /* transform: perspective(200px) rotateX(90deg);
+        transform: translateX(100%);
+        transform: translateY(-100%);
+        transform:rotate3d(1, 1, 1, 180deg) translate(100%, -100%); */
+
+      }
+   
+    }
+
+
+    
 
     
 
@@ -76,8 +109,7 @@
         &:hover{
             background-color: rgb(158, 91, 91);
             box-shadow: 0 0px 0px rgb(158, 91, 91);
-            transform: scale(1.1);
-            transition: all 0.5s ease-out;
+            transform: scale(1.1) ;
         }
         
     }
@@ -87,24 +119,23 @@
         background-color: rgb(209, 193, 193);
         width: 30px;
         height: 3px;
-        
     }
 
     /* quand on clique sur le menu burger==> menu__burger-bar forme une croix */
 .menu__burger:active .menu__burger-bar{ 
-    
     &:nth-child(1){
         transform: rotate(45deg) translate(6px, 6px);
-
         width: 100%;
-    }
+      }
+
     &:nth-child(2){
         display: none;
     }
     
     &:nth-child(3){
         transform: rotate(-45deg) translate(6px, -6px);
-        width: 100%
+        width: 100%;
+  
     }
 }
 /* fin de stylisation de header et la navbar*/
@@ -236,7 +267,7 @@ overflow: hidden;
     border-color: black;
   }
 }
-  
+
 /*--------------- section activités---------------------*/
 .main__section-activites{
   display: flex;
@@ -291,7 +322,8 @@ overflow: hidden;
   justify-content: center;
   align-items: center ;
  width: 30px;
- margin-bottom: 5px;
+  height: auto;
+  margin-bottom: 5px;
   transition: all 0.5s ease-out;
 
 }
@@ -299,21 +331,14 @@ overflow: hidden;
 .arrow > span:nth-child(1){
   color: rgb(127, 16, 16);
 position: absolute;
-
-
- 
 }
 .arrow > span:nth-child(2){
   color: rgb(0, 255, 4);
   position: absolute;
-
-  
 }
 .arrow > span:nth-child(3){
   color: rgb(127, 16, 16);
   position:  absolute;
-
-
 }
 
 @keyframes color{
@@ -428,6 +453,7 @@ position: absolute;
   }
 }
 
+
 /*---------------------section contact---------------*/
 .main__section-contact{
   max-width: 600px;
@@ -483,4 +509,80 @@ position: absolute;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 8px 8px 0px rgb(12, 12, 12);
+}
+
+/* -------------------stylisation de footer------------- */
+.footer{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  padding-top: 10px;
+  color: rgb(127, 16, 16);
+  font-size: calc(0.4rem + 1.5vw) ;
+  border: solid 2px rgb(127, 16, 16);
+  animation: color-change 2s linear infinite;
+  background-color: rgb(255 255 255 / 47%);
+  border-radius: 10px;
+  transition: all 0.5s ease-out;
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
+
+}
+
+
+
+
+.footer__container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__container-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(127, 16, 16);
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
+ 
+  transition: all 0.5s ease-out;
+  &:hover{
+    background-color: rgba(17, 2, 2, 0.391);
+    color: rgb(236, 229, 229);
+    box-shadow: 8px 8px 0px rgba(39, 25, 25, 0.643);
+    padding-right: 20px;
+}
+}
+.footer__container-links > a {
+  display: flex;
+  color: rgb(127, 16, 16);
+  background-color: #550c0c;
+  }
+
+  .footer__container-social{
+    display: flex;
+  }
+
+  .footer__copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(0.4rem + 1vw) ;
+  }
+
+
+/* -------------------stylisation de media query------------- */
+.text-container {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  overflow: hidden;
 }

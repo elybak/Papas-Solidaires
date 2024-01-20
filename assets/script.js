@@ -13,5 +13,5 @@ const links = document.querySelector('.header__nav-links');
 
 burger.addEventListener('click', () => {
     links.classList.toggle('active');
-    /*burger.classList.toggle('active');*/
+    burger.classList.toggle('active');
 });
