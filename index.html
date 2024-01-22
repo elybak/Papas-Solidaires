@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Papas solidaires</title>
     <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+    <link rel="stylesheet" href="main.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
@@ -16,9 +18,12 @@
     <!-- start: header -->
     <header class="header">
       <nav class="header__nav">
-        <a href="index.html" class="header__nav-logo">
-          <img src="assets/img/logo.png" alt="logo de Papas solidaires" class="header__nav-logo">
-        </a>
+        <div class="header__nav-logo">
+          <a href="index.html">
+            <img src="assets/img/logo.png" alt="logo de Papas solidaires">
+          </a>
+
+        </div>
       
     <div class="menu__burger">
            <div class="menu__burger-bar" ></div>
@@ -41,13 +46,14 @@
 <main class="main">
   
 <section class="main__section-presentation">
-    <div class="main__section-carousel">
-        <img src="assets/img/image1.avif" alt="image 1">
-        <img src="assets/img/image2.avif" alt="image 2">
-        <img src="assets/img/image3.jpg" alt="image 3">
-        <img src="assets/img/images4.avif" alt="image 4">
-      <img src="assets/img/image5.avif" alt="image 5">
-    </div>
+  <div class="main__section-carousel">
+    <img src="assets/img/image1.avif" alt="image 1" data-text="Papas solidaires">
+    <img src="assets/img/image3.jpg" alt="image 3" data-text=" Notre papa Notre héros">
+    <img src="assets/img/images4.avif" alt="image 4" data-text="Mon papa, je l'aime et j'ai besoin de lui">
+    <img src="assets/img/image2.avif" alt="image 2" data-text="J'aime ma maman et">
+    <img src="assets/img/image5.avif" alt="image 5" data-text="J'aime mon papa">
+  </div>
+  
 
     <div class="main__discreption">
       <p> <strong>« Papas solidaires »</strong> est une association créée par des personnes sensibilisées à la cause du droit des pères et des enfants en cas de séparation.
@@ -105,13 +111,7 @@
       </div>
   </button>
   <img src="assets/img/droit.jpg" alt="photo d'un pere et son fils">
-  <div class="author__news">
-    <h3 class="author__news-title">
-      <a href="page__evenements.html" class="btn btn-primary">
-        <strong>plus d'informations</strong>
-      </a>
-    </h3>
-  </div>
+
   
 
 </section>
@@ -181,37 +181,62 @@
 
 
 
-  <!--------- debut du footer -->
 </main>
-<footer class="footer">
+<!-- end: main -->
+<!--------- debut du footer -->
+
+  <footer class="footer">
     <div class="footer__container">
-        <div class="footer__container-logo">
-          <img src="assets/img/logo.png" width="70px" alt="logo de Papas solidaires">
-        </div>
-       
-         <div class=" footer__container-links">
-            <ul >
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À-propos</a></li>
-                <li><a href="#">Activités</a></li>
-                <li><a href="#">Membres</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-         </div>
-            <div class="footer__container-social">
-                <ul >
-                    <li><a href="#"> <img src="assets/img/icons/facebook.png" alt="facebook"> </a></li>
-                    <li><a href="#"> <img src="assets/img/icons/instagram.png" alt="instagram"> </a></li>
-                    <li><a href="#"> <img src="assets/img/icons/twitter.png" alt="twitter"> </a></li>
-                </ul>
-                </div>
-    </div>
+      <div class="footer__container-logo">
+       <a href="index.html"><img src="assets/img/logo.png" alt="logo de Papas solidaires">
+       </a> 
+      </div>
   
-    <div class="footer__copy">
+      <div class="footer__container-links">
+<div>
+  <ul>
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">À-propos</a></li>
+    <li><a href="#">Activités</a></li>
+    <li><a href="#">Membres</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+<div>
+  <ul>
+    <li><a href="#">Actualités</a></li>
+    <li><a href="#">Événements</a></li>
+    <li><a href="#">Témoignages</a></li>
+    <li><a href="#">Faire un don</a></li>
+    <li><a href="#">Adhérer</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="footer__container-social">
+        <ul>
+          <li><a href="#"> <img src="assets/img/icons/facebook.png" alt="facebook"> </a></li>
+          <li><a href="#"> <img src="assets/img/icons/instagram.png" alt="instagram"> </a></li>
+          <li><a href="#"> <img src="assets/img/icons/twitter.png" alt="twitter"> </a></li>
+        </ul>
+      </div>
+  
+
+    </div>
+    <div class="footer__container-legal">
+      <p><a href="#">Politique de confidentialité</a></p>
+      <p><a href="#">Conditions d'utilisation</a></p>
+      <p><a href="#">FAQ</a></p>
+      <p><a href="#">Blog</a></p>
+      <p><a href="#">Newsletter</a></p>
+      <p><a href="#">Formulaire de contact</a></p>
+      </div>
+      
+      <div class="footer__copy">
       <p>&copy; 2024 Papas solidaires. Tous droits réservés.</p>
     </div>
   </footer>
-
+  
 <script src="./assets/script.js"></script>
 
   </body>
