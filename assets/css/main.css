@@ -151,6 +151,10 @@
      text-transform: uppercase;
      letter-spacing: 2px;
   }
+
+  .aside{
+    display: none;
+  }
   /*--------------- stylisation des sections ---------------------*/
   
   .main__section-adherer,
@@ -286,8 +290,10 @@
   .main__section-carousel img{
     flex-shrink: 0; /* ça permet de garder la taille de l'image */
     width: 100%;
-    max-height: 300px;
-    object-fit: cover;
+    height: 300px;
+    /* object-fit: cover; */
+    /* object-fit: contain; ça permet de garder la taille de l'image */
+
     border-radius: 10px;
     box-shadow: 8px 8px 8px rgb(12, 12, 12);
     &:hover{
@@ -296,6 +302,10 @@
       transform: rotate3d(1, 1, 1, 360deg);
 
     }
+  }
+
+  .aside{
+    display: none;
   }
  
   
@@ -383,9 +393,9 @@
     }
   }
 }
+
   }
 
-}
 /* fin de media screen 1024px */
 
 /* Stylisation pour les écrans plus larges que 1024px /desktop */
