@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Papas solidaires</title>
-    <link rel="stylesheet" href="assets/reset.css">
-    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
-    <link rel="stylesheet" href="assets/sign-up.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
+    <link rel="stylesheet" href="./assets/css/sign-up.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -41,9 +42,129 @@
 </header>
   <!-- end: header -->
   <!-- start: main -->
+  <main class="main">
+    <!--Section: Contact v.2-->
+<section class="mb-4">
+
+  <h1> ADHERER POUR NOUS SOUTENIR </h1>
+ 
+  <p> Etre adhérent c’est encourager l’association dans ses principes et ses actions. Chaque adhérent est le pivot de l’association.</p>
+
+  <h2> Les 10 bonnes raisons pour adhérer à Papas Solidaires </h2>
+
+  <ul>
+    <li>1 – Défendre le droit de l’enfant à bénéficier de l’amour et de l’éducation de ses deux parents</li>
+    <li>2 – Instaurer l’égalité père mère face à l’enfant en cas de séparation , égalité inscrite en toutes lettres dans la loi.</li>
+    <li>3 – Briser votre isolement . Nous sommes à l’écoute 6/7 jours.</li>
+    <li>4 – Rejoindre une communauté et un réseau de papas solidaires.</li>
+    <li>5 – S’informer sur les lois et le fonctionnement de la justice.</li>
+    <li> – Se défendre efficacement contre les accusations mensongères.</li>
+    <li> 7 – Rencontrer nos avocats spécialisés du droit de la famille.</li>
+    <li>8 – Obtenir des conseils pour préparer son dossier pour le tribunal</li>
+    <li> 9 – Contribuer à l’action pour la vie et au développement durable de l’association Jamais Sans Papa </li>
+    <li>10 – Donner à la solidarité des pères tout son sens et son ampleur, partout en France, pour plus de poids pour obtenir les reformes nécessaires à une justice matriarcale et dépassée.</li>
+  </ul>
+    
+
+
+<h3> Vous souhaitez adhérer à l'association Papas Solidaires ? </h3>
+
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contactez-nous</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">
+      Vous avez une question ? N'hésitez pas à nous contacter directement. Notre équipe reviendra vers vous dans les plus brefs délais pour vous aider
+  </p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST" >
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control" placeholder="votre nom">
+                          <label for="name" class=""></label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control" placeholder="E-mail">
+                          <label for="email" class=""></label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control" placeholder="sujet">
+                          <label for="subject" class=""></label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="votre message"></textarea>
+                          <label for="message"></label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Envoyer</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Lyon 00 rue de la paix <br> 69000 </p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>06 00 00 00 00</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>contact@papas-solidaires.com</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
   
 
-<main class="main">
 
 </main>
 <!-- end: main -->
@@ -94,8 +215,12 @@
       <p>&copy; 2024 Papas solidaires. Tous droits réservés.</p>
     </div>
   </footer>
+
+  
+  
   
 <script src="./assets/script.js"></script>
 
   </body>
 </html>
+
