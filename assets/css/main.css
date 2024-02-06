@@ -199,7 +199,8 @@
   .main__section-activites,
   .main__section-don,
   .main__section-temoignage,
-  .main__section-contact
+  .main__section-contact,
+  .main__section-newsletter
   {
    max-width: 600px;
    margin: auto;
@@ -225,7 +226,8 @@
   .main__section-activites-title,
   .main__section-don-title,
   .main__section-temoignage-title,
-  .main__section-contact-title
+  .main__section-contact-title,
+  .main__section-newsletter-title
   {
    display: flex;
    justify-content: center;
@@ -277,6 +279,7 @@
   
   /* stylisation de header et la navbar*/
   /* stylistation de la section presentation */
+
 
   .main__section-presentation{
     display: flex;
@@ -351,7 +354,8 @@
 .main__section-activites,
 .main__section-don,
 .main__section-temoignage,
-.main__section-contact
+.main__section-contact,
+.main__section-newsletter
 {
   display: flex;
   flex-direction: column;
@@ -381,7 +385,8 @@
 .main__section-activites-title,
 .main__section-don-title,
 .main__section-temoignage-title,
-.main__section-contact-title
+.main__section-contact-title,
+.main__section-newsletter-title
 {
   display: flex;
   justify-content: center;
@@ -431,14 +436,6 @@
 @media screen and (min-width: 1024px) {
   /* stylisation de header et la navbar*/
   /* stylistation de la section presentation */
-
-  .main{
-    display: flex;
-    padding: 0.8rem;
-    max-width: 1124px;
-    margin: auto;
-   
-  }
 
   .main__section-presentation{
     display: flex;
@@ -507,7 +504,8 @@
   .main__section-activites,
   .main__section-don,
   .main__section-temoignage,
-  .main__section-contact
+  .main__section-contact,
+  .main__section-newsletter
   {
     display: flex;
     flex-direction: column;
@@ -536,7 +534,8 @@
     .main__section-activites-title,
     .main__section-don-title,
     .main__section-temoignage-title,
-    .main__section-contact-title
+    .main__section-contact-title,
+    .main__section-newsletter-title
     {
       display: flex;
       justify-content: center;
@@ -574,6 +573,6 @@
           animation: color 2s linear infinite
         }
       }
-    }
-  }
 
+  }
+  }
