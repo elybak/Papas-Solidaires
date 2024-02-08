@@ -2,13 +2,11 @@
 @import url("./footer.css");
 @import url("./body.css");
 
- 
- .container-fluid,
- .main__article{
+  
+ .container-fluid{
     margin: auto;
     max-width: 1200px;   
     width: 100%; 
-
   }
   .row {
     height: 100%;
@@ -62,6 +60,4 @@
     display: flex;
     margin: auto;
   }
-  li{
-    font-size: large;
-  }
+  

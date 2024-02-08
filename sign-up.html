@@ -43,9 +43,10 @@
   <!-- end: header -->
   <!-- start: main -->
   <main class="main">
-    <!--Section: Contact v.2-->
-<section class="mb-4">
 
+    <section class="main__article">
+
+    
   <h1> ADHERER POUR NOUS SOUTENIR </h1>
  
   <p> Etre adhérent c’est encourager l’association dans ses principes et ses actions. Chaque adhérent est le pivot de l’association.</p>
@@ -64,82 +65,50 @@
     <li> 9 – Contribuer à l’action pour la vie et au développement durable de l’association Jamais Sans Papa </li>
     <li>10 – Donner à la solidarité des pères tout son sens et son ampleur, partout en France, pour plus de poids pour obtenir les reformes nécessaires à une justice matriarcale et dépassée.</li>
   </ul>
+
+  
     
 
 
 <h3> Vous souhaitez adhérer à l'association Papas Solidaires ? </h3>
 
-  <!--Section heading-->
   <h2 class="h1-responsive font-weight-bold text-center my-4">Contactez-nous</h2>
-  <!--Section description-->
   <p class="text-center w-responsive mx-auto mb-5">
       Vous avez une question ? N'hésitez pas à nous contacter directement. Notre équipe reviendra vers vous dans les plus brefs délais pour vous aider
   </p>
-
-  <div class="row">
+</section>
+<div class="container-fluid">
 
       <!--Grid column-->
-      <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST" >
-
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                          <input type="text" id="name" name="name" class="form-control" placeholder="votre nom">
-                          <label for="name" class=""></label>
-                      </div>
-                  </div>
-                  <!--Grid column-->
-
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                          <input type="text" id="email" name="email" class="form-control" placeholder="E-mail">
-                          <label for="email" class=""></label>
-                      </div>
-                  </div>
-                  <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
-                          <input type="text" id="subject" name="subject" class="form-control" placeholder="sujet">
-                          <label for="subject" class=""></label>
-                      </div>
-                  </div>
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-12">
-
-                      <div class="md-form">
-                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="votre message"></textarea>
-                          <label for="message"></label>
-                      </div>
-
-                  </div>
-              </div>
-              <!--Grid row-->
-
-          </form>
-
+      <div class="col-md-9 mb-md-0 mb-5">          
+        <form action="contact.php" method="post">
+  
+          <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" class="form-control">
+          </div>
+            <div class="form-group">
+            <label for="tel">Téléphone :</label>
+            <input type="tel" id="tel" name="tel" class="form-control">
+            </div>
+  
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" class="form-control">
+          </div>
+  
+          <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" class="form-control"></textarea>
+          </div>  
           <div class="text-center text-md-left">
               <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Envoyer</a>
           </div>
-          <div class="status"></div>
-      </div>
-      <!--Grid column-->
+        </form>
 
       <!--Grid column-->
       <div class="col-md-3 text-center">
@@ -157,12 +126,12 @@
               </li>
           </ul>
       </div>
-      <!--Grid column-->
-
   </div>
+</div>
 
-</section>
-<!--Section: Contact v.2-->
+
+
+
   
 
 
