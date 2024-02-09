@@ -2,6 +2,13 @@
 @import url("./footer.css");
 @import url("./body.css");
 
+.main__section-activities li{
+    font-size: calc(0.8rem + 0.8vw);
+}
+.main__section-activities ul {
+    padding: 0.8rem;
+}
+
 
 @media screen and (max-width: 768px){
     .main > section {
@@ -15,18 +22,7 @@
         margin: 1rem; 
         width: 100%;
 }
-.card{
-    width: 100%;
-    margin: 0.5rem;
-    padding: 1rem;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.221) 0%,rgba(127, 16, 16, 0.044) 50%, rgb(122, 86, 86) 100%);
-    &> img{
-        width: 100%;
-        border-radius: 10px;
-    }
 
-}
 .aside__left{
     display: none;
 }
@@ -45,18 +41,7 @@
         margin: 1rem; 
         width: 100%;
 }
-.card{
-    width: 100%;
-    margin: 0.5rem;
-    padding: 1rem;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.221) 0%,rgba(127, 16, 16, 0.044) 50%, rgb(122, 86, 86) 100%);
-    &> img{
-        width: 100%;
-        border-radius: 10px;
-    }
 
-}
 .aside__left{
     display: none;
 }
@@ -75,17 +60,6 @@
         width: 100%;
     
 }
-.card{
-    width: 100%;
-    margin: 0.5rem;
-    padding: 1rem;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.221) 0%,rgba(127, 16, 16, 0.044) 50%, rgb(122, 86, 86) 100%);
-    &> img{
-        width: 100%;
-        border-radius: 10px;
-    }
-}
 .aside__left{
     display: flex;
     float: left;
@@ -96,7 +70,6 @@
     align-items: center;
     padding: 0.8rem;
     margin: 1rem;
-   /* border: solid 1px rgb(127, 16, 16); */
     animation: color-change 2s linear infinite;
     background-color: rgb(255 255 255 / 47%);
     border-radius: 10px;

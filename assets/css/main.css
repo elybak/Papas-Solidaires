@@ -169,11 +169,7 @@
   .main__section-adherer,
   .main__section-actualite,
   .main__section-evenements,
-  .main__section-activites,
-  .main__section-don,
-  .main__section-temoignage,
-  .main__section-contact,
-  .main__section-newsletter
+  .main__section-temoignage
   {
 
    max-width: 600px;
@@ -193,12 +189,8 @@
   .main__section-adherer-title,
   .main__section-actualite-title,
   .main__section-evenements-title,
-  .main__section-activites-title,
-  .main__section-don-title,
-  .main__section-temoignage-title,
-  .main__section-contact-title,
-  .main__section-newsletter-title
-  {
+  .main__section-temoignage-title
+    {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -312,14 +304,10 @@
    
 
 
-.main__section-adherer,
-.main__section-actualite,
-.main__section-evenements,
-.main__section-activites,
-.main__section-don,
-.main__section-temoignage,
-.main__section-contact,
-.main__section-newsletter
+  .main__section-adherer,
+  .main__section-actualite,
+  .main__section-evenements,
+  .main__section-temoignage
 {
   display: flex;
   flex-direction: column;
@@ -341,11 +329,7 @@
 .main__section-adherer-title,
 .main__section-actualite-title,
 .main__section-evenements-title,
-.main__section-activites-title,
-.main__section-don-title,
-.main__section-temoignage-title,
-.main__section-contact-title,
-.main__section-newsletter-title
+.main__section-temoignage-title
 {
   display: flex;
   justify-content: center;
@@ -451,12 +435,7 @@
   .main__section-adherer,
   .main__section-actualite,
   .main__section-evenements,
-  .main__section-activites,
-  .main__section-don,
-  .main__section-temoignage,
-  .main__section-contact,
-  .main__section-newsletter
-  {
+  .main__section-temoignage  {
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -476,11 +455,7 @@
     .main__section-adherer-title,
     .main__section-actualite-title,
     .main__section-evenements-title,
-    .main__section-activites-title,
-    .main__section-don-title,
-    .main__section-temoignage-title,
-    .main__section-contact-title,
-    .main__section-newsletter-title
+    .main__section-temoignage-title
     {
       display: flex;
       justify-content: center;
@@ -529,7 +504,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 0.8rem;
-    margin: 1rem;
+    margin:0.8rem ;
    border: solid 1px rgb(127, 16, 16);
     animation: color-change 2s linear infinite;
     background-color: rgb(255 255 255 / 47%);
@@ -557,13 +532,13 @@
     align-items: center;
     width: 100%;
     padding: 0.8rem;
-    border: solid 1px rgb(127, 16, 16);
+    /* border: solid 1px rgb(127, 16, 16); */
     animation: color-change 2s linear infinite;
     background-color: rgb(255 255 255 / 47%);
     border-radius: 10px;
     margin: 1rem;
     & > h5{
-      font-size: calc(0.4rem +0.8vw) ;
+      font-size: calc(0.4rem +0.8) ;
       font-weight: bold;
       color: rgb(156, 27, 27);
     }
@@ -571,7 +546,7 @@
       width: 100%;
       border-radius: 10px;
       box-shadow: 8px 8px 0px rgb(12, 12, 12);
-      margin: 2.3rem;
+      margin: 0.7rem;
     }
   }
 
