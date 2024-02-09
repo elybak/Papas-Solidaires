@@ -1,0 +1,17 @@
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./body.css");
+
+
+.main > p{
+    font-size: calc(0.8rem + 1.5vw) ;    }
+& p > strong{
+    font-size: calc(0.8rem + 1.4vw) ;
+    color: rgb(156, 27, 27);
+    }
+
+p::first-letter{
+    font-size: calc(0.8rem + 1.5vw) ;
+    font-weight: bold;
+    color: rgb(156, 27, 27);
+  }
