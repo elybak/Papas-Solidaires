@@ -10,7 +10,7 @@
     color: rgb(156, 27, 27);
     }
 
-p::first-letter{
+.main > p::first-letter{
     font-size: calc(0.8rem + 1.5vw) ;
     font-weight: bold;
     color: rgb(156, 27, 27);
